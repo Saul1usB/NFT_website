@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    width: 1440px;
+    margin: auto;
+    border: 2px solid violet;
+
+}
+
+nav {
+    display: flex;
+    margin: 1rem 3rem;
+    padding: 2rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    margin: 1rem 0rem;
+    width: 12rem;
+}
+
+.nav-links {
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0.5rem 0.8rem;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-links ul .sign-up {
+    color: rgb(255, 121, 143);
+}
+
+
+/* HOVER LINKS */
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* HOVER LINKS */
+
+
+/* SECTION ONE */
+
+.section-one {
+    height: 30rem;
+    margin: 1rem 3rem 9rem 3rem;
+    display: flex;
+}
+
+.section-one .about-ls {
+    height: 20rem;
+    width: 35rem;
+    margin-top: 6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.section-one .pink {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: rgb(255, 121, 143);
+}
+
+.section-one h1 {
+    margin-top: 1rem;
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 7rem;
+}
+
+.section-one .black {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.section-one button {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0.7rem 2rem;
+    border-radius: 50px; 
+    border: 4px solid transparent; 
+    background: linear-gradient(-45deg,red,blue) border-box; /*3*/
+    -webkit-mask: 
+     linear-gradient(#fff 0 0) padding-box, 
+     linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; 
+    mask-composite: exclude; 
+}
+
+.section-one .nft-img {
+    object-fit: cover;
+    margin-bottom: ;
+    height: 20rem;
+    width: 35rem;
+}
+
+.section-one .nft-img img{
+
+    height: 40rem;
+    width: rem;
+    position: absolute;
+    
+
+}
+
+/* SECTION ONE */
+
+/* SECTION TWO */
+
+.section-two .gradient{
+    padding: 9rem 3rem 3rem;
+    margin: 1rem 5rem;
+    margin-top: 15rem;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #f0467a, #f6546e, #fa6464, #fb735b, #fa8355, #f5954d, #eda64a, #e2b64d, #cdca5b, #b5dd74, #9aed97, #7cfbbe);;
+}
+
+
+.section-two .gradient h2{
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+}
+
+.section-two .gradient p{
+    font-size: 1.rem;
+    padding: 0.5rem 0;
+}
+
+.articles img { 
+    height: 2.5rem;
+    margin-top: 3rem;
+}
+
+
+.articles ul {
+    display: flex;
+    list-style-type: none;
+    margin: 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* SECTION TWO */
+
+/* SECTION THREE */
+
+.section-three {
+    margin: 1rem 5rem;
+}
+
+.section-three h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 1.5rem 0;
+}
+
+.section-three p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.section-three p a {
+    color: black;
+}
+
+/* NFT BLOCKS */
+
+.nft-blocks {
+    display: flex;
+    justify-content: space-between
+}
+
+.purple-man {
+    height: 290px;
+    width: 278px;
+}
+
+/* NFT BLOCKS */
+
+
+
+/* SECTION FOUR */
+
+.section-four {
+    margin: 2rem 3rem;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    border-top: solid 3px rgb(226, 226, 226);
+    border-bottom: solid 3px rgb(226, 226, 226);
+}
+
+.section-four .about-ls {
+    width: 35rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.section-four .pink {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: rgb(255, 121, 143);
+}
+
+.section-four h1 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 5rem;
+}
+
+.section-four .black {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.section-four button {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0.7rem 2rem;
+    border-radius: 50px; 
+    border: 4px solid transparent; 
+    background: linear-gradient(-45deg,red,blue) border-box; /*3*/
+    -webkit-mask: 
+     linear-gradient(#fff 0 0) padding-box, 
+     linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; 
+    mask-composite: exclude; 
+}
+
+.section-four .nft-img img{
+    margin: 0 5rem;
+    width: auto;
+    height: 25rem;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 8rem;
+}
+
+.footer-upper {
+    display: flex;
+    /* border: 5px solid black; */
+}
+
+.logo-social {
+    margin: 0 0 0 5rem;
+    /* background-color: #aae7c9; */
+    width: 25rem;
+
+}
+
+.footer-icons p {
+    padding: 0.8rem 0 1.5rem 0;
+    color: grey;
+    font-size: 1.3rem;
+
+}
+
+.social-icons li{
+    list-style: none;
+    width: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.social-icons img {
+    width: 1.3rem;
+    filter: invert(60%) sepia(10%) saturate(8%) hue-rotate(345deg) brightness(83%) contrast(84%);
+}
+
+
+
+.footer-info li {
+    list-style: none; 
+    padding: 0.2rem; 
+}
+
+.footer-info h4 {
+    padding-bottom: 0.5rem; 
+}
+
+.footer-info {
+    margin: 0 5rem 0 0rem;
+    width: 35rem;
+    padding-left: 20rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: rem;
+    color: grey;
+    /* background-color: rgb(195, 148, 148); */
+}
+
+
+.footer-bottom {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    margin: 6rem 5rem 3rem 5rem;
+}
