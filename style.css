@@ -5,11 +5,12 @@
 }
 
 html {
-    width: 1440px;
+    max-width: 1440px;
+    min-width: 428px;
     margin: auto;
     border: 2px solid violet;
-
 }
+
 
 nav {
     display: flex;
@@ -107,57 +108,53 @@ nav img {
     font-size: 1.3rem;
     font-weight: 400;
     padding: 0.7rem 2rem;
-    border-radius: 50px; 
-    border: 4px solid transparent; 
-    background: linear-gradient(-45deg,red,blue) border-box; /*3*/
-    -webkit-mask: 
-     linear-gradient(#fff 0 0) padding-box, 
-     linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor; 
-    mask-composite: exclude; 
+    border-radius: 50px;
+    border: 4px solid transparent;
+    background: linear-gradient(-45deg, red, blue) border-box;
+    /*3*/
+    -webkit-mask:
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
 }
 
 .section-one .nft-img {
     object-fit: cover;
-    margin-bottom: ;
     height: 20rem;
     width: 35rem;
 }
 
-.section-one .nft-img img{
-
+.section-one .nft-img img {
     height: 40rem;
-    width: rem;
     position: absolute;
-    
-
 }
 
 /* SECTION ONE */
 
 /* SECTION TWO */
 
-.section-two .gradient{
+.section-two .gradient {
     padding: 9rem 3rem 3rem;
     margin: 1rem 5rem;
     margin-top: 15rem;
     border-radius: 20px;
-    background-image: linear-gradient(to right, #f0467a, #f6546e, #fa6464, #fb735b, #fa8355, #f5954d, #eda64a, #e2b64d, #cdca5b, #b5dd74, #9aed97, #7cfbbe);;
+    background-image: linear-gradient(to right, #f0467a, #f6546e, #fa6464, #fb735b, #fa8355, #f5954d, #eda64a, #e2b64d, #cdca5b, #b5dd74, #9aed97, #7cfbbe);
 }
 
 
-.section-two .gradient h2{
+.section-two .gradient h2 {
     font-size: 2rem;
     font-weight: 500;
     padding: 0.5rem 0;
 }
 
-.section-two .gradient p{
+.section-two .gradient p {
     font-size: 1.rem;
     padding: 0.5rem 0;
 }
 
-.articles img { 
+.articles img {
     height: 2.5rem;
     margin-top: 3rem;
 }
@@ -199,7 +196,7 @@ nav img {
 
 .nft-blocks {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .purple-man {
@@ -207,8 +204,62 @@ nav img {
     width: 278px;
 }
 
+.purpleman-nft,
+.beige-nft,
+.redman-nft,
+.green-nft {
+    width: 100%px;
+    height: 25rem;
+    border-radius: 16px;
+    background-color: rgb(241, 241, 241);
+
+}
+
 /* NFT BLOCKS */
 
+/* NFT INDIVIDUAL BLOCK */
+
+.nft-series {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: orangered;
+}
+
+.nft-top-bid {
+    color: grey;
+}
+
+.nft-name {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nft-name img {
+    width: 1rem;
+}
+
+.nft-number {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: grey;
+}
+
+.nft-series,
+.nft-name,
+.nft-number {
+    padding: 0rem 1.5rem 0.2rem 1.5rem;
+}
+
+.nft-text {
+    padding-top: 0.8rem;
+}
+
+
+/* NFT INDIVIDUAL BLOCK */
 
 
 /* SECTION FOUR */
@@ -241,7 +292,7 @@ nav img {
     font-weight: bold;
     line-height: 5rem;
 }
-
+section-four
 .section-four .black {
     font-size: 1.2rem;
     margin-top: 1rem;
@@ -253,17 +304,18 @@ nav img {
     font-size: 1.3rem;
     font-weight: 400;
     padding: 0.7rem 2rem;
-    border-radius: 50px; 
-    border: 4px solid transparent; 
-    background: linear-gradient(-45deg,red,blue) border-box; /*3*/
-    -webkit-mask: 
-     linear-gradient(#fff 0 0) padding-box, 
-     linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor; 
-    mask-composite: exclude; 
+    border-radius: 50px;
+    border: 4px solid transparent;
+    background: linear-gradient(-45deg, red, blue) border-box;
+    /*3*/
+    -webkit-mask:
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
 }
 
-.section-four .nft-img img{
+.section-four .nft-img img {
     margin: 0 5rem;
     width: auto;
     height: 25rem;
@@ -277,12 +329,10 @@ footer {
 
 .footer-upper {
     display: flex;
-    /* border: 5px solid black; */
 }
 
 .logo-social {
     margin: 0 0 0 5rem;
-    /* background-color: #aae7c9; */
     width: 25rem;
 
 }
@@ -291,10 +341,9 @@ footer {
     padding: 0.8rem 0 1.5rem 0;
     color: grey;
     font-size: 1.3rem;
-
 }
 
-.social-icons li{
+.social-icons li {
     list-style: none;
     width: 8rem;
     display: flex;
@@ -311,12 +360,18 @@ footer {
 
 
 .footer-info li {
-    list-style: none; 
-    padding: 0.2rem; 
+    list-style: none;
+    padding: 0.2rem;
+    text-decoration: none;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: grey;
 }
 
 .footer-info h4 {
-    padding-bottom: 0.5rem; 
+    padding-bottom: 0.5rem;
 }
 
 .footer-info {
@@ -328,7 +383,6 @@ footer {
     justify-content: space-between;
     padding-left: rem;
     color: grey;
-    /* background-color: rgb(195, 148, 148); */
 }
 
 
@@ -338,4 +392,169 @@ footer {
     justify-content: space-between;
     color: grey;
     margin: 6rem 5rem 3rem 5rem;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media all and (max-width:800px) {
+    .nav-links  {
+        display: none;
+    }
+}
+
+@media all and (max-width:760px) {
+    .section-one h1 {
+        font-size: clamp(4rem, 10vw + 1rem, 5rem);
+        line-height: clamp(4rem, 10vw + 1rem, 5rem);
+
+    }
+
+}
+
+
+
+/* LAST SIZE (SMALLEST) RESPONSIVE DESIGN */
+
+
+
+@media all and (max-width:480px) {
+    nav {
+        margin: 0.5rem 1rem;
+        padding: 1rem 1rem;
+    }
+
+    .section-one {
+        margin: 1rem 0rem 1rem 1rem;
+    }
+
+    .section-one .about-ls {
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+
+    .section-one h1 {
+        width: 17rem;
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .section-two .gradient {
+        margin: 0;
+        border-radius: 0;
+        padding:7rem 3rem 2rem 2rem;
+        background-image: linear-gradient(to right, #f0467a, #f6546e, #fa6464, #fb735b, #fa8355, #f5954d, #eda64a, #e2b64d, #cdca5b, #b5dd74, #9aed97, #7cfbbe);
+    }
+
+    .section-two .gradient h2 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        padding: 0.5rem 0;
+    }
+    
+    .section-two .gradient p {
+        font-size: 1.23em;
+        padding: 0.5rem 0;
+    }
+
+    .articles img {
+        display: grid;
+        height: 2rem;
+        margin-top: 1rem;
+    }
+
+    .articles ul {
+        flex-wrap: wrap;
+    }
+
+    .section-three {
+        margin-left: 3rem;
+    }
+
+    .section-three h3 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        padding: 1rem 0;
+    }
+
+    .section-three p {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+
+    .nft-blocks {
+        margin-left: 0rem;
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+
+    .section-four {
+        margin: 6rem 0rem 1rem 1rem;
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+    }
+
+    .section-four .about-ls {
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+
+    .section-four h1 {
+        width: 16rem;
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .section-four p {
+        width: 13rem;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+
+    footer {
+        margin-top: 4rem;
+    }
+    
+    .footer-upper {
+        display: flex;
+    }
+    
+    .logo-social {
+        margin: 0 0 0 3rem;
+        width: 25rem;
+    
+    }
+    
+    .footer-icons p {
+        width: 16rem;
+        padding: 0.8rem 0 1.5rem 0;
+        color: grey;
+        font-size: 1.3rem;
+    }
+
+    .footer-bottom {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        color: grey;
+        margin: 2rem 1rem 5rem 3rem;
+    }
+
+    .footer-info {
+        margin: 0 5rem 0 0rem;
+        width: 35rem;
+        padding-left: 20rem;
+        padding-right: 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: rem;
+        color: grey;
+    }
+
 }
