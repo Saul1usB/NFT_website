@@ -82,7 +82,7 @@ nav img {
     margin-right: 2rem;
 }
 
-.section-one .pink {
+.section-one .pink-text {
     margin-top: 0.5rem;
     font-size: 0.9rem;
     font-weight: 700;
@@ -154,13 +154,13 @@ nav img {
     padding: 0.5rem 0;
 }
 
-.articles img {
+.news-articles img {
     height: 2.5rem;
     margin-top: 3rem;
 }
 
 
-.articles ul {
+.news-articles ul {
     display: flex;
     list-style-type: none;
     margin: 5rem;
@@ -199,20 +199,15 @@ nav img {
     justify-content: space-between;
 }
 
-.purple-man {
-    height: 290px;
-    width: 278px;
-}
+/* FIX CORRECT RECHECK */
 
-.purpleman-nft,
-.beige-nft,
-.redman-nft,
-.green-nft {
-    width: 100%px;
+.nft-for-sale-one,
+.nft-for-sale-two,
+.nft-for-sale-three,
+.nft-for-sale-four {
     height: 25rem;
     border-radius: 16px;
     background-color: rgb(241, 241, 241);
-
 }
 
 /* NFT BLOCKS */
@@ -279,7 +274,7 @@ nav img {
     margin-right: 2rem;
 }
 
-.section-four .pink {
+.section-four .pink-text {
     margin-top: 0.5rem;
     font-size: 0.9rem;
     font-weight: 700;
@@ -292,8 +287,8 @@ nav img {
     font-weight: bold;
     line-height: 5rem;
 }
-section-four
-.section-four .black {
+
+section-four .section-four .black {
     font-size: 1.2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -398,10 +393,20 @@ footer {
 /* RESPONSIVE DESIGN */
 
 @media all and (max-width:800px) {
-    .nav-links  {
+    .nav-links {
         display: none;
     }
 }
+
+/* @media all and (max-width:839px) {
+    .section-one h1 {
+        font-size: clamp(4rem, 10vw + 1rem, 5rem);
+        line-height: clamp(4rem, 10vw + 1rem, 5rem);
+
+    }
+}
+
+
 
 @media all and (max-width:760px) {
     .section-one h1 {
@@ -410,15 +415,13 @@ footer {
 
     }
 
-}
-
+} */
 
 
 /* LAST SIZE (SMALLEST) RESPONSIVE DESIGN */
 
 
-
-@media all and (max-width:480px) {
+@media all and (max-width:835px) {
     nav {
         margin: 0.5rem 1rem;
         padding: 1rem 1rem;
@@ -443,7 +446,7 @@ footer {
     .section-two .gradient {
         margin: 0;
         border-radius: 0;
-        padding:7rem 3rem 2rem 2rem;
+        padding: 7rem 3rem 2rem 2rem;
         background-image: linear-gradient(to right, #f0467a, #f6546e, #fa6464, #fb735b, #fa8355, #f5954d, #eda64a, #e2b64d, #cdca5b, #b5dd74, #9aed97, #7cfbbe);
     }
 
@@ -452,19 +455,20 @@ footer {
         font-weight: 500;
         padding: 0.5rem 0;
     }
-    
+
     .section-two .gradient p {
         font-size: 1.23em;
         padding: 0.5rem 0;
     }
 
-    .articles img {
+    .news-articles img {
         display: grid;
+        align-items: center;
         height: 2rem;
         margin-top: 1rem;
     }
 
-    .articles ul {
+    .news-articles ul {
         flex-wrap: wrap;
     }
 
@@ -519,17 +523,17 @@ footer {
     footer {
         margin-top: 4rem;
     }
-    
+
     .footer-upper {
         display: flex;
     }
-    
+
     .logo-social {
         margin: 0 0 0 3rem;
         width: 25rem;
-    
+
     }
-    
+
     .footer-icons p {
         width: 16rem;
         padding: 0.8rem 0 1.5rem 0;
